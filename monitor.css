@@ -1,4 +1,74 @@
+@font-face {
+    font-family: 'SmokumRegular';
+    src: url('font/Smokum-Regular/Smokum-Regular-webfont.eot');
+    src: url('font/Smokum-Regular/Smokum-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Smokum-Regular/Smokum-Regular-webfont.woff') format('woff'),
+         url('font/Smokum-Regular/Smokum-Regular-webfont.ttf') format('truetype'),
+         url('font/Smokum-Regular/Smokum-Regular-webfont.svg#SmokumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+	background: #f8eedf;
+	font-weight: 400;
+	font-size: larger;
+}
+
 #wrapper {
-	background: #a65500;
-	margin: 15%
+	background: #f1dfc5;
+	margin-top: 5em;
+	margin-bottom: 5em;
+    margin-left: auto;
+	margin-right: auto;
+	border: #9c7740 5px solid;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+    width: 40em;
+    
+}
+
+header {
+		font-family: 'SmokumRegular';
+}
+header h1 {
+
+	text-align: center;
+}
+
+nav .navbar {
+	position: relative;
+	width: 28em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+header span {
+	position: absolute;
+	height: 10em;
+	width: 100%;
+	background: url("images/pole2.gif") top	left no-repeat;
+	background-position: 4em 0em;
+	z-index: 100;
+}
+#main_slideshow {
+	width: 20em;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+#main_slideshow img {
+		border-radius: 25px;
+	-moz-border-radius: 25px;
+}
+
+.hidden {
+	visibility: hidden;
 }
