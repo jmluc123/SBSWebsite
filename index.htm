@@ -45,10 +45,11 @@
  <script type="text/javascript">
  	$(document).scroll(function(){    
  	var nav = $('.navbar') ;
- 	var navsection = $('header nav');      
+ 	var navsection = $('header nav');
+ 	var header = $('header')      
  	  if (navsection.offset().top - navsection.outerHeight() <= $(this).scrollTop())    
  	      nav.addClass('navbar-fixed-top');   
- 	       else   
+ 	  else if (header.offset().top >= $(this).scrollTop())
  	      nav.removeClass('navbar-fixed-top');
  	});
  	
