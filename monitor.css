@@ -38,7 +38,7 @@ body {
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
     /*box-shadow: 10px 10px 5px #888888;*/
-   /*box-shadow: -5px 5px 5px #888888, 5px -5px 5px #888888, -5px -5px 5px #888888, 5px 5px 5px #888888;*/
+   box-shadow: -5px 5px 10px #888888, 5px -5px 10px #888888, -5px -5px 10px #888888, 5px 5px 10px #888888;
     width: 40em;
     margin-bottom: 5em;
 
@@ -73,10 +73,20 @@ nav {
 
 header span {
 	position: absolute;
-	height: 18em;
+	height: 15em;
 	width: 8em;
-	background: url("images/pole4.gif") top	left no-repeat;
-	background-position: 5em 1em;
+	background: url("images/pole5.gif") top	left no-repeat;
+	background-position: 4em 1em;
+	z-index: 3;
+	
+}
+
+header .mytop {
+	position: absolute;
+	height: 13em;
+	width: 8em;
+	background: url("images/pole5.gif") top	left no-repeat;
+	background-position: 4em -2em;
 	z-index: 3;
 	
 }
@@ -96,13 +106,35 @@ header span {
 
 article p {
 	font-family: 'KelmscottRomanRegular';
-	width: 30em;
+	width: 28em;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: smaller;
 	margin-top: 5em;
 }
+.services {
+	font-family: 'KelmscottRomanRegular';
+	width: 28em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: smaller;
+	margin-top: 5em;
+	font-weight: 800;
+}
+
+.story {
+	font-family: 'KelmscottRomanRegular';
+	width: 28em;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: smaller;
+	margin-top: 5em;
+}
+
+
 .hidden {
 	visibility: hidden;
 }
