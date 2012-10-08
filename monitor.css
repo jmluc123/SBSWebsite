@@ -10,9 +10,20 @@
 
 }
 
+@font-face {
+    font-family: 'KelmscottRomanRegular';
+    src: url('KELMSCOT-webfont.eot');
+    src: url('KELMSCOT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('KELMSCOT-webfont.woff') format('woff'),
+         url('KELMSCOT-webfont.ttf') format('truetype'),
+         url('KELMSCOT-webfont.svg#KelmscottRomanRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
-	background: #f8eedf;
+	background: #f8eedf url("images/texture5.png");
 	font-weight: 400;
 	font-size: larger;
 }
@@ -20,39 +31,52 @@ body {
 #wrapper {
 	background: #f1dfc5;
 	margin-top: 5em;
-	margin-bottom: 5em;
     margin-left: auto;
 	margin-right: auto;
-	border: #9c7740 5px solid;
+	border: #9c7740 0px solid;
 	border-radius: 25px;
 	-moz-border-radius: 25px;
-    box-shadow: 10px 10px 5px #888888;
+	-webkit-border-radius: 25px;
+    /*box-shadow: 10px 10px 5px #888888;*/
+   /*box-shadow: -5px 5px 5px #888888, 5px -5px 5px #888888, -5px -5px 5px #888888, 5px 5px 5px #888888;*/
     width: 40em;
+    margin-bottom: 5em;
+
     
 }
 
 header {
 		font-family: 'SmokumRegular';
+		/*background: url("images/header7.jpg");*/
+			-webkit-border-top-right-radius: 20px;
+-webkit-border-top-left-radius: 20px;
+-moz-border-radius-topright: 20px;
+-moz-border-radius-topleft: 20px;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
 }
 
-header h1 {
-
+#mytitle {
 	text-align: center;
 }
 
+/*header h1 {
+
+	text-align: center;
+}*/
+
 nav {
-	position: relative;
-	width: 28em;
+	width: 26em;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 header span {
 	position: absolute;
-	height: 12em;
+	height: 18em;
 	width: 8em;
-	background: url("images/pole2.gif") top	left no-repeat;
-	background-position: 4em 0em;
+	background: url("images/pole4.gif") top	left no-repeat;
+	background-position: 5em 1em;
 	z-index: 3;
 	
 }
@@ -71,6 +95,7 @@ header span {
 }
 
 article p {
+	font-family: 'KelmscottRomanRegular';
 	width: 30em;
 	text-align: center;
 	margin-left: auto;
@@ -82,12 +107,24 @@ article p {
 	visibility: hidden;
 }
 
-footer p {
-	width: 30em;
-	text-align: center;
+footer {
+	background: #b4a39c;
+	-webkit-border-bottom-right-radius: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-moz-border-radius-bottomleft: 20px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+	width: 40em;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+footer p {
+	text-align: center;
+
 	margin-top: 5em;
+	margin-bottom:0em;
 	font-size: small;
 }
 
