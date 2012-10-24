@@ -3,6 +3,7 @@
 <head>
 <title>Stowe Barber Shop</title>
 <meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="libraries/modernizr.custom.77886.js"></script>
 <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="libraries/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 <link href="monitor.css" rel="stylesheet">
@@ -31,9 +32,6 @@
 	</header>
 		<article>
 			<div id="myContent">
-			<H1 class="hidden">Home Page</H1>
-			<div id="main_slideshow"><img src="images/example.JPG"></div>
-			<p>Creative and stylish cuts performed in a retro atmosphere... big band music and vintage ads gives a 1940's ambiance... photos of local customers decorate the walls.</p>
 			</div>	
 		</article>
 <footer>
@@ -45,8 +43,11 @@
  <!--<script src="libraries/jquery-ui-1.8.24.custom/js/jquery-ui-1.8.24.custom.min.js"></script>-->
  <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
  <script type="text/javascript" src="libraries/jquery.galleriffic.js"></script>
+ <script type="text/javascript" src="libraries/jquery.cycle.all.js"></script>
  <script type="text/javascript">
  	$(document).ready(function(){
+ 		$("#myContent").load("home.htm");
+ 		
  		$("#menuHome").click(function(){
  			$("#myContent").load("home.htm");
  		});
@@ -66,18 +67,20 @@
  	});
  	
  	$(document).scroll(function(){    
- 	var nav = $('.navbar') ;
- 	var pole = $('header span');
- 	var navsection = $('#pageNav');
- 	var header = $('header')      
- 	  if (navsection.offset().top - navsection.outerHeight() <= $(this).scrollTop())  {  
- 	      nav.addClass('navbar-fixed-top');
- 	      pole.addClass('mytop');   
- 	     }
- 	  else if (header.offset().top >= $(this).scrollTop()){
- 	      nav.removeClass('navbar-fixed-top');
- 	      pole.removeClass('mytop');
- 	     }
+	 	var nav = $('.navbar') ;
+	 	var pole = $('header span');
+	 	var navsection = $('#pageNav');
+	 	var header = $('header');     
+	 	if (navsection.offset().top - navsection.outerHeight() <= $(this).scrollTop())
+	 	{  
+	 		nav.addClass('navbar-fixed-top');
+			pole.addClass('mytop');   
+	 	}
+	 	else if (header.offset().top >= $(this).scrollTop())
+	 	{
+			nav.removeClass('navbar-fixed-top');
+			pole.removeClass('mytop');
+	 	}
  	});
  	
  </script>

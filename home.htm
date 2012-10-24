@@ -2,10 +2,23 @@
 <html>
 	<body>
 
-<H1 class="hidden">Home Page</H1>
-			<div id="main_slideshow"><img src="images/example.JPG"></div>
+<H1 class="hidden">Styles</H1>
+            
+			<div id="main_slideshow">
+				<img src="images/slide1.png">
+				<img src="images/slide2.png">
+				<img src="images/slide3.png">
+				<img src="images/slide4.png">
+				<img src="images/slide5.png">
+				<img src="images/slide6.png">
+				<img src="images/slide7.png">
+			</div>
 			<p>Creative and stylish cuts performed in a retro atmosphere... big band music and vintage ads gives a 1940's ambiance... photos of local customers decorate the walls.</p>
 			
-			
+<script type="text/javascript">
+$("#main_slideshow").cycle({ 
+	fx:     'fade', 
+});
+</script>		
 </body>
 </html>

@@ -93,16 +93,33 @@ header .mytop {
 
 #main_slideshow {
 	width: 20em;
-	height: auto;
+	height: 15em;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em;
 }
+
 #main_slideshow img {
+	    width:auto;
+	    height:auto;
 		border-radius: 25px;
 	-moz-border-radius: 25px;
 }
 
+
+.servicesimg {
+	width: 20em;
+	height: 10em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+
+.servicesimg img {
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+}
 article p {
 	font-family: 'KelmscottRomanRegular';
 	width: 28em;
