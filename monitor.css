@@ -133,7 +133,9 @@ header .mytop {
 }
 
 #gallery {
-position:relative;	
+position:relative;
+width: 25em;
+height: auto;	
 left: 10em;
 top: -19em;
 }
@@ -204,5 +206,6 @@ footer p {
 	margin-bottom:0em;
 	font-size: small;
 }
+
 
 
