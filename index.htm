@@ -45,44 +45,46 @@
  <script type="text/javascript" src="libraries/jquery.galleriffic.js"></script>
  <script type="text/javascript" src="libraries/jquery.cycle.all.js"></script>
  <script type="text/javascript">
- 	$(document).ready(function(){
- 		$("#myContent").load("home.htm");
- 		
- 		$("#menuHome").click(function(){
- 			$("#myContent").load("home.htm");
- 		});
- 		$("#menuServices").click(function(){
- 			$("#myContent").load("services.htm");
- 		});
- 		$("#menuStyles").click(function(){
- 			$("#myContent").load("styles.htm");
- 		});
- 		$("#menuContact").click(function(){
- 			$("#myContent").load("contact.htm");
- 		});
- 		$("nav li").click(function(){
- 			$("nav li").removeClass('active');
- 			$(this).addClass('active');
- 		});
- 	});
- 	
- 	$(document).scroll(function(){    
-	 	var nav = $('.navbar') ;
-	 	var pole = $('header span');
-	 	var navsection = $('#pageNav');
-	 	var header = $('header');     
-	 	if (navsection.offset().top - navsection.outerHeight() <= $(this).scrollTop())
-	 	{  
-	 		nav.addClass('navbar-fixed-top');
-			pole.addClass('mytop');   
-	 	}
-	 	else if (header.offset().top >= $(this).scrollTop())
-	 	{
-			nav.removeClass('navbar-fixed-top');
-			pole.removeClass('mytop');
-	 	}
- 	});
- 	
+$(document).ready(function(){
+	"use strict";
+	$("#myContent").load("home.htm");
+	
+	$("#menuHome").click(function(){
+		$("#myContent").load("home.htm");
+	});
+	$("#menuServices").click(function(){
+		$("#myContent").load("services.htm");
+	});
+	$("#menuStyles").click(function(){
+		$("#myContent").load("styles.htm");
+	});
+	$("#menuContact").click(function(){
+		$("#myContent").load("contact.htm");
+	});
+	$("nav li").click(function(){
+		$("nav li").removeClass('active');
+		$(this).addClass('active');
+	});
+});
+
+$(document).scroll(function(){  
+	"use strict";  
+	var nav = $(".navbar") ;
+	var pole = $("header span");
+	var navsection = $("#pageNav");
+	var header = $("header");       
+	if (navsection.offset().top - navsection.outerHeight() <= $(this).scrollTop())
+	{
+		nav.addClass("navbar-fixed-top");
+		pole.addClass("mytop"); 
+	}
+	else if (header.offset().top >= $(this).scrollTop())
+	{
+		nav.removeClass("navbar-fixed-top");
+		pole.removeClass("mytop");
+	}	
+});
+
  </script>
 </body>
 </html>

@@ -23,7 +23,8 @@
 }
 
 body {
-	background: #f8eedf url("images/texture5.png");
+	/*background: #f8eedf url("images/texture5.png");*/
+	background: #f8eedf url("images/texture.jpg");
 	font-weight: 400;
 	font-size: larger;
 }
@@ -33,11 +34,11 @@ body {
 	margin-top: 5em;
     margin-left: auto;
 	margin-right: auto;
-	border: #9c7740 0px solid;
+	border: #9c7740 5px solid;
 	border-radius: 25px;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
-   box-shadow: -5px 5px 10px #888888, 5px -5px 10px #888888, -5px -5px 10px #888888, 5px 5px 10px #888888;
+   /*box-shadow: -5px 5px 10px #888888, 5px -5px 10px #888888, -5px -5px 10px #888888, 5px 5px 10px #888888;*/
     width: 40em;
     margin-bottom: 5em;
 
@@ -72,9 +73,9 @@ border-top-left-radius: 20px;
 
 header span {
 	position: absolute;
-	height: 15em;
+	height: 12em;
 	width: 8em;
-	background: url("images/pole5.gif") top	left no-repeat;
+	background: url("images/pole.png") top	left no-repeat;
 	background-position: 4em 1em;
 	z-index: 3;
 	
@@ -96,19 +97,19 @@ header .mytop {
 	height: 15em;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1em;
 }
 
 #main_slideshow img {
-	    width:auto;
-	    height:auto;
+	    width: 20em;
+	    height: 13.274em;
 		border-radius: 25px;
 	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	behavior: url("ie-css3.htc");
 }
 
-
 .servicesimg {
-	width: 20em;
+	width: 23em;
 	height: 10em;
 	margin-left: auto;
 	margin-right: auto;
@@ -119,7 +120,35 @@ header .mytop {
 .servicesimg img {
 	border-radius: 25px;
 	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	
+	behavior: url("ie-css3.htc");
 }
+
+#myGallery {
+	height: 35em;
+	width: 35em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#gallery {
+position:relative;	
+left: 10em;
+top: -19em;
+}
+
+
+#thumbs {
+position: relative;
+top: 4em;
+left: 1em;
+}
+
+#thumbs ul {
+	list-style-type: none;
+}
+
 article p {
 	font-family: 'KelmscottRomanRegular';
 	width: 28em;
@@ -136,7 +165,7 @@ article p {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: smaller;
-	margin-top: 5em;
+	margin-top: 3em;
 	font-weight: 800;
 }
 
