@@ -181,6 +181,16 @@ article p {
 	margin-top: 5em;
 }
 
+.ContactInfo {
+	font-family: 'KelmscottRomanRegular';
+	width: 28em;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: smaller;
+	margin-top: 3em;
+	font-weight: 800;
+}
 
 .hidden {
 	visibility: hidden;
